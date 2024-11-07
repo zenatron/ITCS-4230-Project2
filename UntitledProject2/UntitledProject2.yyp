@@ -8,7 +8,7 @@
     "children":[],
     "name":"Default",
   },
-  "defaultScriptType":0,
+  "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Animation Curves","folderPath":"folders/Animation Curves.yy","name":"Animation Curves","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Extensions","folderPath":"folders/Extensions.yy","name":"Extensions","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -30,11 +30,15 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.2.162",
+    "IDEVersion":"2024.8.0.169",
   },
   "name":"UntitledProject2",
   "resources":[
+    {"id":{"name":"obj_newTowerIcon","path":"objects/obj_newTowerIcon/obj_newTowerIcon.yy",},},
+    {"id":{"name":"obj_testTower","path":"objects/obj_testTower/obj_testTower.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"spr_newTowerIcon","path":"sprites/spr_newTowerIcon/spr_newTowerIcon.yy",},},
+    {"id":{"name":"spr_testTower","path":"sprites/spr_testTower/spr_testTower.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
