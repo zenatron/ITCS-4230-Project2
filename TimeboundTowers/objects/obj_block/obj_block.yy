@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_testTower",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_block",
+  "eventList":[],
   "managed":true,
-  "name":"obj_testTower",
+  "name":"obj_block",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -30,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_testTower",
-    "path":"sprites/spr_testTower/spr_testTower.yy",
+    "name":"spr_block",
+    "path":"sprites/spr_block/spr_block.yy",
   },
   "spriteMaskId":null,
   "visible":true,
