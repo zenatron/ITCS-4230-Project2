@@ -1,45 +1,48 @@
+/// @description Button Controls
+// Evelyn Hosana 11/12/2024
+
+// adjusted bounds based on sprite origin
+var left = x - sprite_xoffset;
+var right = x - sprite_xoffset + sprite_width;
+var top = y - sprite_yoffset;
+var bottom = y - sprite_yoffset + sprite_height;
+
+// check if mouse is within adjusted boundaries
+if (point_in_rectangle(mouse_x, mouse_y, left, top, right, bottom)) { image_alpha = 1; } // sprite fully visible when hovered
+else { image_alpha = 0; } // sprite invisible when not hovered
+
+/// @description If mouse button pressed, go to desginated rooms
+
 if (room == rm_main_menu) {
-	// Check if the mouse is within the button's bounds
-	var is_hovered = (mouse_x > left_bound && mouse_x < right_bound && mouse_y > top_bound && mouse_y < bottom_bound);
-
-	if (is_hovered && mouse_check_button_pressed(mb_left)) {
-	    // Set the click timer to 180 frames (3 seconds at 60 FPS)
-	    click_timer = 180;
-
-	    // perform action based on button_id (opposite direction)
-	    switch (button_id) {
-	        case 1: // "exit"
-	            game_end();
-	            break;
-	        case 2: // "credits"
-	            break;
-	        case 3: // "help"
-	            break;
-	        case 4: // "controls"
-	            break;
-	        case 5: // "play"
+	if (mouse_check_button_pressed(mb_left) && point_in_rectangle(mouse_x, mouse_y, left, top, right, bottom)) {
+		switch (button_type) {
+			case "play":
 				room_goto(rm_map_choose);
-	            break;
-	    }
-		click_timer--;
+				break;
+			case "controls":
+				break;
+			case "help":
+				break;
+			case "credits":
+				break;
+			case "exit":
+				game_end();
+				break;
+		}
 	}
-} else if (room == rm_map_choose) {
-	// Check if the mouse is within the button's bounds
-	var is_hovered = (mouse_x > left_bound && mouse_x < right_bound && mouse_y > top_bound && mouse_y < bottom_bound);
-
-	if (is_hovered && mouse_check_button_pressed(mb_left)) {
-	    // Set the click timer to 180 frames (3 seconds at 60 FPS)
-	    click_timer = 180;
-
-	    // perform action based on button_id (opposite direction)
-	    switch (button_id) {
-	        case 1: // "exit"
+}
+if (room == rm_map_choose) {
+	if (mouse_check_button_pressed(mb_left) && point_in_rectangle(mouse_x, mouse_y, left, top, right, bottom)) {
+	    switch (button_type) {
+	        case "map_1":
+	            room_goto(rm_prehistoric);
 	            break;
-	        case 2: // "credits"
+	        case "map_2":
+	            room_goto(rm_medieval);
 	            break;
-	        case 3: // "help"
+	        case "map_3":
+	            room_goto(rm_modern);
 	            break;
 	    }
-		click_timer--;
 	}
 }
