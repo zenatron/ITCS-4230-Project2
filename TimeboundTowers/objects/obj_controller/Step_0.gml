@@ -63,4 +63,5 @@ function IsValidPlacement(_xPos, _yPos)
 		show_debug_message("TOO MANY TOWERS PLACED: CANNOT PLACE MORE");
 		return false;
 	}
+
 }
