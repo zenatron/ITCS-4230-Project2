@@ -2,5 +2,6 @@
 // Eshwar Kanikanti 11/13/24
 
 range = 300;
-fire_rate =  room_speed / 4;
+rate =  room_speed / 4;
 shooting = false;
+shootEnemy = noone;
