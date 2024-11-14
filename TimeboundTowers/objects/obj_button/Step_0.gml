@@ -38,10 +38,10 @@ if (room == rm_map_choose) {
 	            room_goto(rm_prehistoric);
 	            break;
 	        case "map_2":
-	            room_goto(rm_medieval);
+	            room_goto(rm_prehistoric); // temporary for testing
 	            break;
 	        case "map_3":
-	            room_goto(rm_modern);
+	            room_goto(rm_prehistoric); // temporary for testing
 	            break;
 	    }
 	}

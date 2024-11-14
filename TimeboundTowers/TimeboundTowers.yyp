@@ -30,7 +30,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.1.171",
+    "IDEVersion":"2024.6.2.162",
   },
   "name":"UntitledProject2",
   "resources":[
@@ -51,6 +51,7 @@
     {"id":{"name":"obj_tower","path":"objects/obj_tower/obj_tower.yy",},},
     {"id":{"name":"obj_tower2","path":"objects/obj_tower2/obj_tower2.yy",},},
     {"id":{"name":"path_prehistoric1","path":"paths/path_prehistoric1/path_prehistoric1.yy",},},
+    {"id":{"name":"rm_death","path":"rooms/rm_death/rm_death.yy",},},
     {"id":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
     {"id":{"name":"rm_map_choose","path":"rooms/rm_map_choose/rm_map_choose.yy",},},
     {"id":{"name":"rm_medieval","path":"rooms/rm_medieval/rm_medieval.yy",},},
@@ -69,15 +70,17 @@
     {"id":{"name":"spr_testEnemy","path":"sprites/spr_testEnemy/spr_testEnemy.yy",},},
     {"id":{"name":"spr_testTower","path":"sprites/spr_testTower/spr_testTower.yy",},},
     {"id":{"name":"spr_tower2","path":"sprites/spr_tower2/spr_tower2.yy",},},
+    {"id":{"name":"spr_youdied","path":"sprites/spr_youdied/spr_youdied.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rm_prehistoric","path":"rooms/rm_prehistoric/rm_prehistoric.yy",},},
     {"roomId":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
+    {"roomId":{"name":"rm_prehistoric","path":"rooms/rm_prehistoric/rm_prehistoric.yy",},},
     {"roomId":{"name":"rm_map_choose","path":"rooms/rm_map_choose/rm_map_choose.yy",},},
     {"roomId":{"name":"rm_medieval","path":"rooms/rm_medieval/rm_medieval.yy",},},
     {"roomId":{"name":"rm_modern","path":"rooms/rm_modern/rm_modern.yy",},},
+    {"roomId":{"name":"rm_death","path":"rooms/rm_death/rm_death.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

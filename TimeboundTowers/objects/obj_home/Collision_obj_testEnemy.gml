@@ -12,6 +12,8 @@ health -= obj_testEnemy.damage_dealt;
 // Home dies if health less than or equal to 0.
 if (health <= 0) {
 	instance_destroy(self);
+	room_goto(rm_death);
+	alarm[0] = 2 * room_speed;
 }
 
 // Destroy the enemy object.
