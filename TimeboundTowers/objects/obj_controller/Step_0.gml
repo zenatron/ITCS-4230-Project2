@@ -1,8 +1,9 @@
 /// @description Step Event for Main Controller
 
+/*
 if (mouse_check_button_pressed(mb_left))
 	PlaceTower(mouse_x, mouse_y, "Towers", obj_tower);
-
+*/
 
 
 // Charge given amount of money

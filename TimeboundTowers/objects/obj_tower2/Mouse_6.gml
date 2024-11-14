@@ -2,4 +2,4 @@
 // Testing deleting/"selling" a tower when left mouse button clicked.
 global.towerCount -= 1;
 instance_destroy(self);
-global.credits += obj_tower_click.cost/2
+global.credits += obj_tower_click2.cost/2
