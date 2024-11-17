@@ -19,3 +19,6 @@ draw_text(100, 200, "No build cost?: ");
 draw_text(300, 200, global.noBuildCost);
 draw_text(100, 250, "No tower limit?: ");
 draw_text(300, 250, global.noMaxTowers);
+// Evan Stark - November 15th 2024 - ITCS 4230 001
+// Drawing text to show the tower limit.
+draw_text(100, 300, string_concat("Towers used: ", global.towerCount, "/", global.maxTowers) );

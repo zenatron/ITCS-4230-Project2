@@ -15,5 +15,5 @@ global.towerCount = 0;
 global.roundCounter = 0;
 
 // Evan Stark - November 13th 2024 - ITCS 4230 001
-// For the first draft, create new enemy instance every 10-ish seconds.
+// For the first draft, create new enemy instance every 3-ish seconds.
 alarm[0] = room_speed * 3;

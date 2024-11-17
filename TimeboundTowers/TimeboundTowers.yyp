@@ -30,7 +30,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.1.171",
+    "IDEVersion":"2024.8.0.169",
   },
   "name":"UntitledProject2",
   "resources":[
@@ -51,6 +51,7 @@
     {"id":{"name":"obj_tower","path":"objects/obj_tower/obj_tower.yy",},},
     {"id":{"name":"obj_tower2","path":"objects/obj_tower2/obj_tower2.yy",},},
     {"id":{"name":"path_prehistoric1","path":"paths/path_prehistoric1/path_prehistoric1.yy",},},
+    {"id":{"name":"path_prehistoric2","path":"paths/path_prehistoric2/path_prehistoric2.yy",},},
     {"id":{"name":"rm_death","path":"rooms/rm_death/rm_death.yy",},},
     {"id":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
     {"id":{"name":"rm_map_choose","path":"rooms/rm_map_choose/rm_map_choose.yy",},},

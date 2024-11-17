@@ -14,6 +14,12 @@ function ChargeMoney(_amount, _isTokens)
 	if (global.noBuildCost)
 		return;
 		
+	// Evan Stark - November 15th 2024 - ITCS 4230 001
+	// If tower limit reached, no tower created = no charges!
+	if (global.towerCount >= global.maxTowers) {
+		return;
+	}
+		
 	if (_amount < global.credits && !_isTokens)
 		global.credits -= _amount;
 	else
@@ -63,5 +69,5 @@ function IsValidPlacement(_xPos, _yPos)
 		show_debug_message("TOO MANY TOWERS PLACED: CANNOT PLACE MORE");
 		return false;
 	}
-
+	
 }
