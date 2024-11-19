@@ -46,3 +46,35 @@ if (room == rm_map_choose) {
 	    }
 	}
 }
+
+if (room == rm_prehistoric || room == rm_medieval || room == rm_modern) {
+	if (mouse_check_button_pressed(mb_left) && point_in_rectangle(mouse_x, mouse_y, left, top, right, bottom)) {
+		var draw_tower;
+        switch (button_type) {
+            case "tower_1":
+                if (global.credits >= 50) {
+                    draw_tower = instance_create_layer(mouse_x, mouse_y, "Towers", obj_drawTower);
+					draw_tower.image_index = 0;
+                }
+                break;
+            case "tower_2":
+                if (global.credits >= 100) {
+                    draw_tower = instance_create_layer(mouse_x, mouse_y, "Towers", obj_drawTower);
+                    draw_tower.image_index = 2;
+                }
+                break;
+            case "tower_3":
+                if (global.credits >= 150) {
+                    draw_tower = instance_create_layer(mouse_x, mouse_y, "Towers", obj_drawTower);
+                    draw_tower.image_index = 4;
+                }
+                break;
+            case "tower_4":
+                if (global.credits >= 200) {
+                    draw_tower = instance_create_layer(mouse_x, mouse_y, "Towers", obj_drawTower);
+                    draw_tower.image_index = 6;
+                }
+                break;
+        }
+    }
+}

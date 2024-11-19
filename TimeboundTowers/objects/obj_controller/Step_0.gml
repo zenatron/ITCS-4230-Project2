@@ -39,13 +39,15 @@ function PlaceTower(_xPos, _yPos, _layer, _towerObj)
 {
 	if (IsValidPlacement(_xPos, _yPos))
 	{
-		instance_create_layer(_xPos, _yPos, _layer, _towerObj);
+		var new_tower = instance_create_layer(_xPos, _yPos, _layer, _towerObj);
 		global.towerCount += 1;
 		show_debug_message("Tower " + nameof(_towerObj) + " placed at X: " + string(_xPos) + " Y: " + string(_yPos) + " num: " + string(global.towerCount));
+		return new_tower;
 	}
 	else
 	{
 		show_debug_message("Cannot place tower!");
+		return noone;
 	}
 }
 

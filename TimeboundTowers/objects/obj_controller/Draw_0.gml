@@ -1,13 +1,9 @@
-/// @description Draw buy menu in upper left corner
-// Evelyn Hosana, 11/12/2024
-draw_sprite(spr_buy_menu, 0, display_get_width(), 0);
-
+/// @description Draw Game Elements
 // Eshwar Kanikanti 11/13/24
 // Test buying and selling, display cost, display towers on menu
+draw_set_color(c_black);
 draw_text(100, 50, "Credits: ");
 draw_text(200, 50, global.credits);
-draw_sprite(spr_testTower, 0, 1600, 180);
-draw_sprite(spr_tower2, 0, 1660, 180);
 
 // Evan Stark - November 13th 2024 - ITCS 4230 001
 // Displaying home health, active cheat codes on screen.
@@ -22,3 +18,15 @@ draw_text(300, 250, global.noMaxTowers);
 // Evan Stark - November 15th 2024 - ITCS 4230 001
 // Drawing text to show the tower limit.
 draw_text(100, 300, string_concat("Towers used: ", global.towerCount, "/", global.maxTowers) );
+
+// Evelyn Hosana 11/18/2024
+draw_set_color(c_white);
+// draw sprite with respective cost
+draw_sprite(spr_tower, 0, 1630, 200);
+draw_text(1650, 137, "50");
+draw_sprite(spr_tower, 2, 1800, 200);
+draw_text(1815, 137, "100");
+draw_sprite(spr_tower, 4, 1630, 360);
+draw_text(1645, 300, "150");
+draw_sprite(spr_tower, 6, 1800, 360);
+draw_text(1805, 290, "200");

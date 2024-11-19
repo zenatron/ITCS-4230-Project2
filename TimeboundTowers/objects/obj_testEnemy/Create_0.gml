@@ -13,3 +13,7 @@ if (_rand_path < 0.5) {
 else {
 	path_start(path_prehistoric2, 5, path_action_stop, true);
 }
+
+image_speed = 0;
+prev_x = x;
+prev_y = y;
