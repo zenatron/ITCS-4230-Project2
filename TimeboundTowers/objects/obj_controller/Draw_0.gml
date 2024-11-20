@@ -19,6 +19,10 @@ draw_text(300, 250, global.noMaxTowers);
 // Drawing text to show the tower limit.
 draw_text(100, 300, string_concat("Towers used: ", global.towerCount, "/", global.maxTowers) );
 
+// Evan Stark - November 20th 2024 - ITCS 4230 001
+// Drawing text to track sell button's status.
+draw_text(100, 350, string_concat("Sell mode: ", global.sellButton) );
+
 // Evelyn Hosana 11/18/2024
 draw_set_color(c_white);
 // draw sprite with respective cost

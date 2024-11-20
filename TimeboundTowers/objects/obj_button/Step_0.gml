@@ -75,6 +75,15 @@ if (room == rm_prehistoric || room == rm_medieval || room == rm_modern) {
                     draw_tower.image_index = 6;
                 }
                 break;
+			// Evan Stark - November 20th 2024 - ITCS 4230 001
+			// Implementing Sell button functionality.
+			case "sell":
+				if(instance_exists(obj_controller)) {
+					// Set to opposite truth value just to cover deselecting sell option.
+					global.sellButton = !global.sellButton;
+				}
+			case "merge":
+				break;
         }
     }
 }
