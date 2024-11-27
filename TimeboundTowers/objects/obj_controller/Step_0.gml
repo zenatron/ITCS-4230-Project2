@@ -16,16 +16,17 @@ function ChargeMoney(_amount, _isTokens)
 		
 	// Evan Stark - November 15th 2024 - ITCS 4230 001
 	// If tower limit reached, no tower created = no charges!
+	// 11/26 edit: Modified arguments to account for if credits = the cost.
 	if (global.towerCount >= global.maxTowers) {
 		return;
 	}
 		
-	if (_amount < global.credits && !_isTokens)
+	if (_amount <= global.credits && !_isTokens)
 		global.credits -= _amount;
 	else
 		show_debug_message("Not enough Credits!");
 	
-	if (_amount < global.tokens && _isTokens)
+	if (_amount <= global.tokens && _isTokens)
 		global.tokens -= _amount;
 	else
 		show_debug_message("Not enough Tokens!")
