@@ -7,7 +7,7 @@ if (global.immortality) {
 }
 
 // Else, deal damage.
-health -= obj_testEnemy.damage_dealt;
+health -= obj_enemy1.damage_dealt;
 
 // Home dies if health less than or equal to 0.
 if (health <= 0) {

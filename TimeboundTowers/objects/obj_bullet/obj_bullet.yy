@@ -2,8 +2,8 @@
   "$GMObject":"",
   "%Name":"obj_bullet",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_enemy1","path":"objects/obj_enemy1/obj_enemy1.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_testEnemy","path":"objects/obj_testEnemy/obj_testEnemy.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_bullet",

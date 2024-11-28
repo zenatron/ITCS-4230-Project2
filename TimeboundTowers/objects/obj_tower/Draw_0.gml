@@ -4,7 +4,7 @@
 draw_self();
 draw_set_color(c_red);
 draw_circle(x, y, range, true);
-var enemy = instance_nearest(x, y, obj_testEnemy);
+var enemy = instance_nearest(x, y, obj_enemy1);
 
 if (enemy != noone) {
 	

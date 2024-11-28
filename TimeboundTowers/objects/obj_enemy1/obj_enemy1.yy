@@ -1,12 +1,14 @@
 {
   "$GMObject":"",
-  "%Name":"obj_testEnemy",
+  "%Name":"obj_enemy1",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":5,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_testEnemy",
+  "name":"obj_enemy1",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -31,6 +33,8 @@
     {"$GMObjectProperty":"v1","%Name":"damage_dealt","filters":[],"listItems":[],"multiselect":false,"name":"damage_dealt","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"20","varType":1,},
     {"$GMObjectProperty":"v1","%Name":"credits_given","filters":[],"listItems":[],"multiselect":false,"name":"credits_given","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"10","varType":1,},
     {"$GMObjectProperty":"v1","%Name":"tokens_given","filters":[],"listItems":[],"multiselect":false,"name":"tokens_given","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":1,},
+    {"$GMObjectProperty":"v1","%Name":"path_id","filters":[],"listItems":[],"multiselect":false,"name":"path_id","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"noone","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"default_speed","filters":[],"listItems":[],"multiselect":false,"name":"default_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"2","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
