@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"obj_enemy2",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_enemy2",
   "overriddenProperties":[],
@@ -31,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_enemy2",
-    "path":"sprites/spr_enemy2/spr_enemy2.yy",
+    "name":"spr_sabertooth",
+    "path":"sprites/spr_sabertooth/spr_sabertooth.yy",
   },
   "spriteMaskId":null,
   "visible":true,

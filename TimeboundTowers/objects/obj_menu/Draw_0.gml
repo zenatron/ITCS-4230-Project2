@@ -4,7 +4,7 @@
 draw_self();
 draw_set_color(c_white);
 
-//draw tower menu
+// draw tower menu
 if (!global.menuToggle) {
 	// draw sprite with respective cost
 	draw_sprite(spr_tower, 0, 1630, 200);
@@ -19,10 +19,15 @@ if (!global.menuToggle) {
 	// draw sprite with respective cost
 	draw_sprite(spr_powerup, 0, 1630, 200);
 	draw_text(1665, 137, "1");
-	draw_sprite(spr_powerup, 0, 1800, 200);
+	draw_sprite(spr_powerup, 1, 1800, 200);
 	draw_text(1830, 137, "1");
-	draw_sprite(spr_powerup, 0, 1630, 360);
+	draw_sprite(spr_powerup, 2, 1630, 360);
 	draw_text(1665, 300, "2");
-	draw_sprite(spr_powerup, 0, 1800, 360);
+	draw_sprite(spr_powerup, 3, 1800, 360);
 	draw_text(1830, 300, "2");
+}
+
+// draw tower in merge mode
+if (drawTower && pickedTowerSprite != noone) {
+    draw_sprite(pickedTowerSprite, pickedTowerIndex, mouse_x, mouse_y);
 }

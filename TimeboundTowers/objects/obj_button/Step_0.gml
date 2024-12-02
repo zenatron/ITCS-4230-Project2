@@ -41,57 +41,81 @@ if (room == rm_map_choose) {
 	            room_goto(rm_medieval);
 	            break;
 	        case "map_3":
-	            room_goto(rm_modern); // temporary for testing
+	            room_goto(rm_modern);
 	            break;
 	    }
 	}
 }
 
-if (room == rm_prehistoric || room == rm_medieval || room == rm_modern) {
+if (room == rm_tutorial || room == rm_prehistoric || room == rm_medieval || room == rm_modern) {
 	if (mouse_check_button_pressed(mb_left) && point_in_rectangle(mouse_x, mouse_y, left, top, right, bottom)) {
 		var draw_tower;
         switch (button_type) {
             case "buy_1":
-				if (!global.menuToggle) { // if buying towers
+				// if buying towers (menu toggle = false), not in merge mode and not in sell mode
+				if (!global.menuToggle && !global.sellButton && !global.mergeButton) {
 	                if (global.credits >= 50) { // if enough credits
 						// draw tower at mouse
 	                    draw_tower = instance_create_layer(mouse_x, mouse_y, "Towers", obj_drawTower);
 						draw_tower.image_index = 0;
 	                }
-				} else { // if buying powerups
-					// powerup functionality:
-					// if enough tokens
-					// draw tokens at mouse
+				} else {
+					// if buying powerups (menu toggle = true), not in merge mode and not in sell mode
+					if (global.menuToggle && !global.sellButton && !global.mergeButton) {
+						if (global.tokens >= 1) { // if enough tokens (dropped by "effect" enemies)
+							scr_activate_powerup("double_damage", 15); // activate designated powerup for set duration (10 sec)
+							powerup_active = true; // toggle flag to draw powerup description for player
+							global.tokens -= 1; // take away player token
+						}
+					}
 				}
                 break;
             case "buy_2":
-				if (!global.menuToggle) {
+				if (!global.menuToggle && !global.sellButton && !global.mergeButton) {
 	                if (global.credits >= 100) {
 	                    draw_tower = instance_create_layer(mouse_x, mouse_y, "Towers", obj_drawTower);
 	                    draw_tower.image_index = 2;
 	                }
 				} else {
-					// powerup 2
+					if (global.menuToggle && !global.sellButton && !global.mergeButton) {
+						if (global.tokens >= 1) {
+							scr_activate_powerup("faster_attack", 15);
+							powerup_active = true;
+							global.tokens -= 1;
+						}
+					}
 				}
                 break;
             case "buy_3":
-				if (!global.menuToggle) {
+				if (!global.menuToggle && !global.sellButton && !global.mergeButton) {
 	                if (global.credits >= 150) {
 	                    draw_tower = instance_create_layer(mouse_x, mouse_y, "Towers", obj_drawTower);
 	                    draw_tower.image_index = 4;
 	                }
 				} else {
-					// powerup 3
+					if (global.menuToggle && !global.sellButton && !global.mergeButton) {
+						if (global.tokens >= 2) {
+							scr_activate_powerup("slow_enemies", 10);
+							powerup_active = true;
+							global.tokens -= 2;
+						}
+					}
 				}
                 break;
             case "buy_4":
-				if (!global.menuToggle) {
+				if (!global.menuToggle && !global.sellButton && !global.mergeButton) {
 	                if (global.credits >= 200) {
 	                    draw_tower = instance_create_layer(mouse_x, mouse_y, "Towers", obj_drawTower);
 	                    draw_tower.image_index = 6;
 	                }
 				} else {
-					// powerup 4
+					if (global.menuToggle && !global.sellButton && !global.mergeButton) {
+						if (global.tokens >= 2) {
+							scr_activate_powerup("road_block", 20);
+							powerup_active = true;
+							global.tokens -= 2;
+						}
+					}
 				}
                 break;
 			case "tower":
@@ -100,6 +124,19 @@ if (room == rm_prehistoric || room == rm_medieval || room == rm_modern) {
 			case "powerup":
 				global.menuToggle = true;
 				break;
+			case "merge":
+				if(instance_exists(obj_controller)) {
+					global.mergeButton = !global.mergeButton;
+					if (!global.mergeButton) {
+						// reset tower drawing state in merge mode
+						with (obj_menu) {
+							drawTower = false;
+							pickedTowerSprite = noone;
+							pickedTowerIndex = -1;
+						}
+					}
+				}
+				break;
 			// Evan Stark - November 20th 2024 - ITCS 4230 001
 			// Implementing Sell button functionality.
 			case "sell":
@@ -107,7 +144,6 @@ if (room == rm_prehistoric || room == rm_medieval || room == rm_modern) {
 					// Set to opposite truth value just to cover deselecting sell option.
 					global.sellButton = !global.sellButton;
 				}
-			case "merge":
 				break;
         }
     }

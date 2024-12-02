@@ -21,3 +21,12 @@ if (enemy != noone) {
 		shootEnemy = noone;
 	}
 }
+
+if (shaderActive) {
+    shader_set(sh_upgrade);
+	shader_set_uniform_f(shader_get_uniform(sh_upgrade, "u_time"), current_time / 1000.0); // pass elapsed time in seconds
+    draw_sprite(sprite_index, image_index, x, y); // draw tower with shader
+    shader_reset();
+} else {
+    draw_sprite(sprite_index, image_index, x, y); // normal drawing
+}

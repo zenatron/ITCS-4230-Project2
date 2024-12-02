@@ -57,6 +57,11 @@ function IsValidPlacement(_xPos, _yPos)
 {
 	if (global.towerCount < global.maxTowers || global.noMaxTowers)
 	{
+		// check if within restricted area (buy menu)
+		if (_xPos >= 1450 && _xPos <= 1920 && _yPos >= 0 && _yPos <= 550)
+		{
+			return false;
+		}
 		if (!position_meeting(_xPos, _yPos, obj_block) && !position_meeting(_xPos, _yPos, obj_tower))
 		{
 			return true;

@@ -31,3 +31,6 @@ if (image_index == 6) {
 
 shootEnemy = noone;
 image_speed = 0;
+
+shaderActive = false;
+upgradeTimer = 0; // shader duration for tower upgrade
