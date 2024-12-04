@@ -3,6 +3,12 @@
 
 if (image_alpha == 1) { draw_self(); }
 
+if (global.double_damage || global.faster_attack || global.slow_enemies || global.road_block) {
+    powerup_active = true; // at least one powerup is active
+} else {
+    powerup_active = false;
+}
+
 if (powerup_active) {
 	draw_set_color(c_red);
 	if (global.double_damage) { draw_text(10, 890, "Double Damage Active!"); }

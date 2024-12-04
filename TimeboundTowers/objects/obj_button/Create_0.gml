@@ -1,4 +1,4 @@
-/// @description Alarm Definitions for Powerup Functionality
+///@description Alarm Definitions for Powerup Functionality
 // Evelyn Hosana - 12/2/24
 
 alarm[0] = -1; // double damage

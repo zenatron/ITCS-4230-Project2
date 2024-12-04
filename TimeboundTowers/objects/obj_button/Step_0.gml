@@ -17,7 +17,7 @@ if (room == rm_main_menu) {
 	if (mouse_check_button_pressed(mb_left) && point_in_rectangle(mouse_x, mouse_y, left, top, right, bottom)) {
 		switch (button_type) {
 			case "play":
-				room_goto(rm_map_choose);
+				room_goto(rm_tutorial);
 				break;
 			case "controls":
 				break;
@@ -64,7 +64,6 @@ if (room == rm_tutorial || room == rm_prehistoric || room == rm_medieval || room
 					if (global.menuToggle && !global.sellButton && !global.mergeButton) {
 						if (global.tokens >= 1) { // if enough tokens (dropped by "effect" enemies)
 							scr_activate_powerup("double_damage", 15); // activate designated powerup for set duration (10 sec)
-							powerup_active = true; // toggle flag to draw powerup description for player
 							global.tokens -= 1; // take away player token
 						}
 					}
@@ -80,7 +79,6 @@ if (room == rm_tutorial || room == rm_prehistoric || room == rm_medieval || room
 					if (global.menuToggle && !global.sellButton && !global.mergeButton) {
 						if (global.tokens >= 1) {
 							scr_activate_powerup("faster_attack", 15);
-							powerup_active = true;
 							global.tokens -= 1;
 						}
 					}
@@ -96,7 +94,6 @@ if (room == rm_tutorial || room == rm_prehistoric || room == rm_medieval || room
 					if (global.menuToggle && !global.sellButton && !global.mergeButton) {
 						if (global.tokens >= 2) {
 							scr_activate_powerup("slow_enemies", 10);
-							powerup_active = true;
 							global.tokens -= 2;
 						}
 					}
@@ -112,7 +109,6 @@ if (room == rm_tutorial || room == rm_prehistoric || room == rm_medieval || room
 					if (global.menuToggle && !global.sellButton && !global.mergeButton) {
 						if (global.tokens >= 2) {
 							scr_activate_powerup("road_block", 20);
-							powerup_active = true;
 							global.tokens -= 2;
 						}
 					}

@@ -22,6 +22,24 @@ if (enemy != noone) {
 	}
 }
 
+var tutorial_enemy = instance_nearest(x, y, obj_testEnemy);
+
+if (tutorial_enemy != noone) {
+	if (point_distance(x, y, tutorial_enemy.x, tutorial_enemy.y) <= range + 10) {
+		if (!shooting) {
+			shooting = true;
+			alarm[0] = 1;
+		}
+		
+		shootEnemy = tutorial_enemy;
+		
+	} else {
+		shooting = false;
+		shootEnemy = noone;
+	}
+}
+
+// Evelyn Hosana - 12/2/24
 if (shaderActive) {
     shader_set(sh_upgrade);
 	shader_set_uniform_f(shader_get_uniform(sh_upgrade, "u_time"), current_time / 1000.0); // pass elapsed time in seconds

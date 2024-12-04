@@ -1,6 +1,8 @@
-///@description Script for specified powerups
-// Evelyn Hosana 12/2/24
-
+/// @function scr_activate_powerup(powerup_type, duration)
+/// @description Activates Specified Powerup for Player
+/// @param powerup_type - type of powerup to set
+/// @param duration - lasting time for powerup
+// Evelyn Hosana - 12/2/24
 function scr_activate_powerup(powerup_type, duration){
 	// activate appropriate powerup
 	switch (powerup_type) {
@@ -29,10 +31,6 @@ function scr_activate_powerup(powerup_type, duration){
 			if (room == rm_modern) { instance_create_layer(35, 130, "Enemies", obj_roadBlock); }
 	        alarm[3] = duration * room_speed;
 	        show_debug_message("Road Block activated for " + string(duration) + " seconds!");
-	        break;
-        
-	    default:
-	        show_debug_message("Unknown powerup type: " + powerup_type);
 	        break;
 	}
 }

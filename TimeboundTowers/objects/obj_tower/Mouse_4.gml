@@ -6,4 +6,7 @@ if (global.sellButton) {
 	global.towerCount -= 1;
 	global.credits += cost / 2;
 	global.sellButton = false;
+	
+	// set global variable for tutorial level debugging
+	global.sold = true;
 }

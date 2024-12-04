@@ -4,6 +4,8 @@
 range = 0;
 rate = 0;
 cost = 0;
+// tutorial debugging variable
+global.sold = false;
 
 if (image_index == 0) {
 	range = 200;

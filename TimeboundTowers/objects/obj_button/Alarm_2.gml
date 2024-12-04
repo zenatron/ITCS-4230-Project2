@@ -1,5 +1,5 @@
-/// @description Slow Enemies Powerup
+/// @description Faster Attack Powerup
 // Evelyn Hosana - 12/2/24
 
-global.slow_enemies = false;
-show_debug_message("Slow Enemies expired.");
+global.faster_attack = false;
+show_debug_message("Faster Attack expired.");
