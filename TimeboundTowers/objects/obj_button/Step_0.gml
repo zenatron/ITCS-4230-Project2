@@ -1,12 +1,6 @@
 /// @description Button Controls
 // Evelyn Hosana 11/12/2024
 
-// adjusted bounds based on sprite origin
-var left = x - sprite_xoffset;
-var right = x - sprite_xoffset + sprite_width;
-var top = y - sprite_yoffset;
-var bottom = y - sprite_yoffset + sprite_height;
-
 // check if mouse is within adjusted boundaries
 if (point_in_rectangle(mouse_x, mouse_y, left, top, right, bottom)) { image_alpha = 1; } // sprite fully visible when hovered
 else { image_alpha = 0; } // sprite invisible when not hovered
@@ -20,11 +14,17 @@ if (room == rm_main_menu) {
 				room_goto(rm_tutorial);
 				break;
 			case "controls":
-				break;
-			case "help":
-				break;
-			case "credits":
-				break;
+                menu_active = !menu_active;
+                menu_type = "controls";
+                break;
+            case "help":
+                menu_active = !menu_active;
+                menu_type = "help";
+                break;
+            case "credits":
+                menu_active = !menu_active;
+                menu_type = "credits";
+                break;
 			case "exit":
 				game_end();
 				break;

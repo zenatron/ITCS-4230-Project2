@@ -9,7 +9,7 @@ global.noMaxTowers = false;
 // Starting game tokens
 health = 100;
 global.credits = 200;
-global.tokens = 0;
+global.tokens = 1;
 global.maxTowers = 20;
 global.towerCount = 0;
 

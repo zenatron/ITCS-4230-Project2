@@ -26,9 +26,9 @@ function scr_activate_powerup(powerup_type, duration){
         
 	    case "road_block":
 	        global.road_block = true;
-			if (room == rm_prehistoric) { instance_create_layer(1800, 710, "Enemies", obj_roadBlock); }
+			if (room == rm_prehistoric) { instance_create_layer(1750, 710, "Enemies", obj_roadBlock); }
 			if (room == rm_medieval) { instance_create_layer(760, 940, "Enemies", obj_roadBlock); }
-			if (room == rm_modern) { instance_create_layer(35, 130, "Enemies", obj_roadBlock); }
+			if (room == rm_modern) { instance_create_layer(35, 145, "Enemies", obj_roadBlock); }
 	        alarm[3] = duration * room_speed;
 	        show_debug_message("Road Block activated for " + string(duration) + " seconds!");
 	        break;

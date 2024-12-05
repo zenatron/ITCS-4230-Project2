@@ -1,6 +1,8 @@
 /// @description Set Dialog and Action Events
 // Evelyn Hosana - 12/4/24
 
+var home = instance_nearest(x, y, obj_home);
+
 if (keyboard_check_pressed(vk_enter)) {
     switch (current_state) {
         case TutorialState.DIALOG_1:
@@ -28,6 +30,7 @@ if (keyboard_check_pressed(vk_enter)) {
             current_state = TutorialState.DIALOG_7;
             break;
         case TutorialState.DIALOG_7:
+			home.image_index = 1;
             show_dialog = false; // hide dialog
             current_state = TutorialState.CHECK_SELL;
             break;
@@ -84,6 +87,7 @@ switch (current_state) {
         break;
     case TutorialState.CHECK_MERGE:
         if (instance_exists(obj_tower) && (obj_tower.image_index == 1 || obj_tower.image_index == 3)) {
+			home.image_index = 2;
 			check_timer++;
 			global.mergeButton = false;
 			if (check_timer == room_speed * 2) { instance_create_layer(-64, 750, "Enemies", obj_testEnemy); }
@@ -96,7 +100,8 @@ switch (current_state) {
         }
 		break;
     case TutorialState.SPAWN_FINAL_ENEMY:
-        check_timer++;
+        home.image_index = 3;
+		check_timer++;
         if (check_timer == room_speed * 2) {
             instance_create_layer(-64, 750, "Enemies", obj_testEnemy);
         } else if (check_timer == room_speed * 6) {

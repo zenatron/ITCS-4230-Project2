@@ -1,7 +1,11 @@
 /// @description Start Path and Set Particles
 // Evelyn Hosana - 12/3/2024
 
-image_speed = 0;
+image_speed = 0; // stop animating frames
+image_yscale *= 2; // double size
+image_xscale = -2; // face right in sprites case, double size
+frame_timer = 0; // timer to control frame update
+frame_speed = room_speed * 0.1; // change frame every second
 
 // start path
 path_start(path_tutorial, 1, path_action_stop, true);

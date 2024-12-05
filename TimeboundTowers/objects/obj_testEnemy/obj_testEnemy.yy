@@ -37,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_mammoth",
-    "path":"sprites/spr_mammoth/spr_mammoth.yy",
+    "name":"spr_dino",
+    "path":"sprites/spr_dino/spr_dino.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -16,3 +16,5 @@ if (powerup_active) {
 	if (global.slow_enemies) { draw_text(10, 990, "Slowing Enemies Active!"); }
 	if (global.road_block) { draw_text(10, 1040, "Road Block Active!"); }
 }
+
+if (menu_active) { scr_menu_box(menu_type); } // call menu box script

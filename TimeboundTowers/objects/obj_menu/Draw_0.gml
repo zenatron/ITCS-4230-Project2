@@ -21,9 +21,9 @@ if (!global.menuToggle) {
 	draw_text(1665, 137, "1");
 	draw_sprite(spr_powerup, 1, 1800, 200);
 	draw_text(1830, 137, "1");
-	draw_sprite(spr_powerup, 2, 1630, 360);
+	draw_sprite(spr_powerup, 3, 1630, 360);
 	draw_text(1665, 300, "2");
-	draw_sprite(spr_powerup, 3, 1800, 360);
+	draw_sprite(spr_powerup, 2, 1800, 360);
 	draw_text(1830, 300, "2");
 }
 
