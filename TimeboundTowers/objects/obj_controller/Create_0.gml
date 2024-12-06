@@ -22,9 +22,6 @@ global.menuToggle = false;
 global.mergeButton = false;
 global.activeMainMenu = "";
 
-immortality_toggle = false;
-build_cost_toggle = false;
-max_tower_toggle = false;
 
 // powerup globals
 global.double_damage = false;
