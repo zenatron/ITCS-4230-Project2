@@ -20,7 +20,12 @@ if (instance_exists(obj_controller) && global.mergeButton) {
 					
 					// need add functionality to ensure that image_index does not go out of bounds
                     newTower.sprite_index = pickedTowerSprite;
-                    newTower.image_index = pickedTowerIndex + 1;
+					
+					if (newTower.image_index + 1 < sprite_get_number(spr_tower))
+					{
+						newTower.image_index = pickedTowerIndex + 1;
+					}
+						
                     drawTower = false; // reset draw state
 					global.towerCount -= 1;
 					newTower.upgradeTimer = room_speed * 3;

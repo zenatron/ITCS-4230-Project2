@@ -51,7 +51,7 @@ if (room == rm_tutorial || room == rm_prehistoric || room == rm_medieval || room
             case "buy_1":
 				// if buying towers (menu toggle = false), not in merge mode and not in sell mode
 				if (!global.menuToggle && !global.sellButton && !global.mergeButton) {
-	                if (global.credits >= 50) { // if enough credits
+	                if (global.credits >= 50 || global.noBuildCost) { // if enough credits
 						// draw tower at mouse
 	                    draw_tower = instance_create_layer(mouse_x, mouse_y, "Towers", obj_drawTower);
 						draw_tower.image_index = 0;
@@ -59,7 +59,7 @@ if (room == rm_tutorial || room == rm_prehistoric || room == rm_medieval || room
 				} else {
 					// if buying powerups (menu toggle = true), not in merge mode and not in sell mode
 					if (global.menuToggle && !global.sellButton && !global.mergeButton) {
-						if (global.tokens >= 1) { // if enough tokens (dropped by "effect" enemies)
+						if (global.tokens >= 1 || global.noBuildCost) { // if enough tokens (dropped by "effect" enemies)
 							scr_activate_powerup("double_damage", 15); // activate designated powerup for set duration (10 sec)
 							global.tokens -= 1; // take away player token
 						}
@@ -68,13 +68,13 @@ if (room == rm_tutorial || room == rm_prehistoric || room == rm_medieval || room
                 break;
             case "buy_2":
 				if (!global.menuToggle && !global.sellButton && !global.mergeButton) {
-	                if (global.credits >= 125) {
+	                if (global.credits >= 125 || global.noBuildCost) {
 	                    draw_tower = instance_create_layer(mouse_x, mouse_y, "Towers", obj_drawTower);
 	                    draw_tower.image_index = 2;
 	                }
 				} else {
 					if (global.menuToggle && !global.sellButton && !global.mergeButton) {
-						if (global.tokens >= 1) {
+						if (global.tokens >= 1 || global.noBuildCost) {
 							scr_activate_powerup("faster_attack", 15);
 							global.tokens -= 1;
 						}
@@ -83,13 +83,13 @@ if (room == rm_tutorial || room == rm_prehistoric || room == rm_medieval || room
                 break;
             case "buy_3":
 				if (!global.menuToggle && !global.sellButton && !global.mergeButton) {
-	                if (global.credits >= 250) {
+	                if (global.credits >= 250 || global.noBuildCost) {
 	                    draw_tower = instance_create_layer(mouse_x, mouse_y, "Towers", obj_drawTower);
 	                    draw_tower.image_index = 4;
 	                }
 				} else {
 					if (global.menuToggle && !global.sellButton && !global.mergeButton) {
-						if (global.tokens >= 2) {
+						if (global.tokens >= 2 || global.noBuildCost) {
 							scr_activate_powerup("slow_enemies", 10);
 							global.tokens -= 2;
 						}
@@ -98,13 +98,13 @@ if (room == rm_tutorial || room == rm_prehistoric || room == rm_medieval || room
                 break;
             case "buy_4":
 				if (!global.menuToggle && !global.sellButton && !global.mergeButton) {
-	                if (global.credits >= 400) {
+	                if (global.credits >= 400 || global.noBuildCost) {
 	                    draw_tower = instance_create_layer(mouse_x, mouse_y, "Towers", obj_drawTower);
 	                    draw_tower.image_index = 6;
 	                }
 				} else {
 					if (global.menuToggle && !global.sellButton && !global.mergeButton) {
-						if (global.tokens >= 2) {
+						if (global.tokens >= 2 || global.noBuildCost) {
 							scr_activate_powerup("road_block", 20);
 							global.tokens -= 2;
 						}

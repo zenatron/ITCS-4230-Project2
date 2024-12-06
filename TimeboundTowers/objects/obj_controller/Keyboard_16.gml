@@ -22,6 +22,14 @@ if (keyboard_check_pressed(ord("M")))
 	max_tower_toggle = !max_tower_toggle;
 }
 
+if (keyboard_check_pressed(ord("D"))) // quick debug jump
+{
+	room_goto(rm_prehistoric);
+	global.immortality = true;
+	global.noBuildCost = true;
+	global.noMaxTowers = true;
+}
+
 // Eshwar Kanikanti 12/5/2024
 // Skip tutorial level while testing
 if (keyboard_check_pressed(ord("T")))
