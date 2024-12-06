@@ -11,7 +11,7 @@ if (room == rm_main_menu) {
 	if (mouse_check_button_pressed(mb_left) && point_in_rectangle(mouse_x, mouse_y, left, top, right, bottom)) {
 		switch (button_type) {
 			case "play":
-				room_goto(rm_tutorial);
+				room_goto(rm_map_choose);
 				break;
 			case "controls":
 				global.activeMainMenu = "controls";
@@ -128,6 +128,7 @@ if (room == rm_tutorial || room == rm_prehistoric || room == rm_medieval || room
 							pickedTowerIndex = -1;
 						}
 					}
+					if (global.sellButton) { global.sellButton = false; } // disable selling if active in merge
 				}
 				break;
 			// Evan Stark - November 20th 2024 - ITCS 4230 001
@@ -136,6 +137,7 @@ if (room == rm_tutorial || room == rm_prehistoric || room == rm_medieval || room
 				if(instance_exists(obj_controller)) {
 					// Set to opposite truth value just to cover deselecting sell option.
 					global.sellButton = !global.sellButton;
+					if (global.mergeButton) { global.mergeButton = false; } // disable merging if active in merge
 				}
 				break;
         }

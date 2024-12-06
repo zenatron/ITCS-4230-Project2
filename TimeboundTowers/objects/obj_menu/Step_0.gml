@@ -3,7 +3,7 @@
 
 if (instance_exists(obj_controller) && global.mergeButton) {
 	if (mouse_check_button_pressed(mb_left) && instance_position(mouse_x, mouse_y, obj_tower)) {
-        var tower = instance_position(mouse_x, mouse_y, obj_tower);
+        tower = instance_position(mouse_x, mouse_y, obj_tower);
         if (tower != noone) {
             if (!drawTower) {
                 // first click: pick up tower
@@ -11,7 +11,7 @@ if (instance_exists(obj_controller) && global.mergeButton) {
                 pickedTowerSprite = tower.sprite_index;
                 pickedTowerIndex = tower.image_index;
                 instance_destroy(tower);
-            } else if (drawTower) {
+            } else {
                 // second click: attempt to merge
                 if (tower.sprite_index == pickedTowerSprite && tower.image_index == pickedTowerIndex) {
                     // valid merge, destroy second tower and spawn upgraded tower
@@ -25,7 +25,8 @@ if (instance_exists(obj_controller) && global.mergeButton) {
 					{
 						newTower.image_index = pickedTowerIndex + 1;
 					}
-						
+					if (newTower.image_index > 7) { newTower.image_index = 7; } // ensure within bounds
+					
                     drawTower = false; // reset draw state
 					global.towerCount -= 1;
 					newTower.upgradeTimer = room_speed * 3;
@@ -39,5 +40,12 @@ if (instance_exists(obj_controller) && global.mergeButton) {
                 }
             }
         }
-    }
+	} else if (mouse_check_button_pressed(mb_left) && drawTower == true) {
+		if (obj_controller.IsValidPlacement(mouse_x, mouse_y)) {
+			drawTower = false; // reset draw state
+			var newTower = instance_create_layer(mouse_x, mouse_y, "Towers", obj_tower);
+			newTower.image_index = pickedTowerIndex;
+			global.mergeButton = false; // reset merge button
+		}
+	}
 }
