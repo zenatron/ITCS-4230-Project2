@@ -35,6 +35,7 @@
   "name":"UntitledProject2",
   "resources":[
     {"id":{"name":"f_goth_body","path":"fonts/f_goth_body/f_goth_body.yy",},},
+    {"id":{"name":"f_goth_menu","path":"fonts/f_goth_menu/f_goth_menu.yy",},},
     {"id":{"name":"f_goth_title","path":"fonts/f_goth_title/f_goth_title.yy",},},
     {"id":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},},
@@ -70,7 +71,7 @@
     {"id":{"name":"rm_prehistoric","path":"rooms/rm_prehistoric/rm_prehistoric.yy",},},
     {"id":{"name":"rm_tutorial","path":"rooms/rm_tutorial/rm_tutorial.yy",},},
     {"id":{"name":"scr_activate_powerup","path":"scripts/scr_activate_powerup/scr_activate_powerup.yy",},},
-    {"id":{"name":"scr_menu_box","path":"scripts/scr_menu_box/scr_menu_box.yy",},},
+    {"id":{"name":"scr_menu_text","path":"scripts/scr_menu_text/scr_menu_text.yy",},},
     {"id":{"name":"scr_word_wrap","path":"scripts/scr_word_wrap/scr_word_wrap.yy",},},
     {"id":{"name":"sh_upgrade","path":"shaders/sh_upgrade/sh_upgrade.yy",},},
     {"id":{"name":"snd_bullet","path":"sounds/snd_bullet/snd_bullet.yy",},},

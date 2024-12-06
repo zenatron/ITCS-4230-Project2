@@ -14,17 +14,14 @@ if (room == rm_main_menu) {
 				room_goto(rm_tutorial);
 				break;
 			case "controls":
-                menu_active = !menu_active;
-                menu_type = "controls";
+				global.activeMainMenu = "controls";
                 break;
             case "help":
-                menu_active = !menu_active;
-                menu_type = "help";
+				global.activeMainMenu = "help";
                 break;
             case "credits":
-                menu_active = !menu_active;
-                menu_type = "credits";
-                break;
+                global.activeMainMenu = "credits";
+				break;
 			case "exit":
 				game_end();
 				break;

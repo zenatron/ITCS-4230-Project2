@@ -20,6 +20,7 @@ global.sellButton = false;
 // Evelyn Hosana - 12/2/24
 global.menuToggle = false;
 global.mergeButton = false;
+global.activeMainMenu = "";
 
 immortality_toggle = false;
 build_cost_toggle = false;

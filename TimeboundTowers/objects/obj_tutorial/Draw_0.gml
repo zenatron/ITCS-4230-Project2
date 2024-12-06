@@ -18,6 +18,7 @@ if (show_dialog) {
     // draw dialog text
     draw_set_alpha(1);
     draw_set_color(c_white);
+	draw_set_font(f_goth_body);
 
     // wrap text
     var wrapped_text = scr_word_wrap(dialog_text, rect_width - 40); // 20px padding on each side
