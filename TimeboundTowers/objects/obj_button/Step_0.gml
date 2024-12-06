@@ -11,7 +11,7 @@ if (room == rm_main_menu) {
 	if (mouse_check_button_pressed(mb_left) && point_in_rectangle(mouse_x, mouse_y, left, top, right, bottom)) {
 		switch (button_type) {
 			case "play":
-				room_goto(rm_map_choose);
+				room_goto(rm_tutorial);
 				break;
 			case "controls":
 				global.activeMainMenu = "controls";
