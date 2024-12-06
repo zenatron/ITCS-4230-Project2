@@ -8,13 +8,13 @@ draw_set_color(c_white);
 if (!global.menuToggle) {
 	// draw sprite with respective cost
 	draw_sprite(spr_tower, 0, 1630, 200);
-	draw_text(1650, 137, "50");
+	draw_text(1650, 137, "50"); // Cost of red tower
 	draw_sprite(spr_tower, 2, 1800, 200);
-	draw_text(1815, 137, "100");
+	draw_text(1815, 137, "125"); // Cost of green tower
 	draw_sprite(spr_tower, 4, 1630, 360);
-	draw_text(1645, 300, "150");
+	draw_text(1645, 300, "250"); // Cost of blue tower
 	draw_sprite(spr_tower, 6, 1800, 360);
-	draw_text(1805, 300, "200");
+	draw_text(1805, 300, "400"); // Cost of purple tower
 } else { // draw powerup menu
 	// draw sprite with respective cost
 	draw_sprite(spr_powerup, 0, 1630, 200);
