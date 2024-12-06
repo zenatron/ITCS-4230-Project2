@@ -7,3 +7,7 @@ if (has_particle_effect) {
 		global.tokens += tokens_given;
 	}
 }
+
+// Eshwar Kanikanti - 12/05/2024
+// Sound for destroying enemy
+audio_play_sound(snd_enemy_defeat, 0, false)

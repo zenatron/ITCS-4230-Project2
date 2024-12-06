@@ -8,14 +8,14 @@ if (shaderActive) {
 	}
 }
 
+// Eshwar Kanikanti 12/5/2024
+// Fixed range and fire rate for the towers + added bullet colors
 if (image_index == 0 || image_index == 1) {
 	range = 200;
 	rate =  room_speed / 2;
 	cost = 50;
 }
 
-// Eshwar Kanikanti 12/5/2024
-// Fixed range and fire rate being the same for all towers
 if (image_index == 2  || image_index == 3) {
 	range = 200;
 	rate =  room_speed / 3;

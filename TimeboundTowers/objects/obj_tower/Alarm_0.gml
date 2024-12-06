@@ -7,6 +7,7 @@
 // Bullet firing at enemy
 if (instance_exists(shootEnemy)) {
 	var bullet = instance_create_layer(x, y, "Enemies", obj_bullet);
+	audio_play_sound(snd_bullet, 0, false)
 	// increase bullet speed based on powerup
 	if (global.faster_attack) { bullet.speed *= 2; }
 	bullet.direction = point_direction(x, y, shootEnemy.x, shootEnemy.y);

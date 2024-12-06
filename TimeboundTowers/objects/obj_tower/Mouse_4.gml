@@ -9,4 +9,5 @@ if (global.sellButton) {
 	
 	// set global variable for tutorial level debugging
 	global.sold = true;
+	audio_play_sound(snd_sell, 0, false);
 }

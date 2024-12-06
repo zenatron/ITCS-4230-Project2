@@ -30,4 +30,5 @@ if instance_exists(obj_controller) {
 	} else {
 	    instance_destroy(); // destroy instance if no conditions are met
 	}
+	audio_play_sound(snd_tower_place, 0, false);
 }

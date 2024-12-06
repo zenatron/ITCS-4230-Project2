@@ -8,11 +8,13 @@ if (global.immortality) {
 
 // Else, deal damage.
 health -= obj_enemy1.damage_dealt;
+audio_play_sound(snd_home_damage, 0, false)
 
 // Home dies if health less than or equal to 0.
 if (health <= 0) {
 	instance_destroy(self);
 	room_goto(rm_death);
+	audio_play_sound(snd_death, 0, false)
 	alarm[0] = 2 * room_speed;
 }
 
