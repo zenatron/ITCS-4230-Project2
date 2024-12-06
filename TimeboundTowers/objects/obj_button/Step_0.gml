@@ -68,7 +68,7 @@ if (room == rm_tutorial || room == rm_prehistoric || room == rm_medieval || room
                 break;
             case "buy_2":
 				if (!global.menuToggle && !global.sellButton && !global.mergeButton) {
-	                if (global.credits >= 100) {
+	                if (global.credits >= 125) {
 	                    draw_tower = instance_create_layer(mouse_x, mouse_y, "Towers", obj_drawTower);
 	                    draw_tower.image_index = 2;
 	                }
@@ -83,7 +83,7 @@ if (room == rm_tutorial || room == rm_prehistoric || room == rm_medieval || room
                 break;
             case "buy_3":
 				if (!global.menuToggle && !global.sellButton && !global.mergeButton) {
-	                if (global.credits >= 150) {
+	                if (global.credits >= 250) {
 	                    draw_tower = instance_create_layer(mouse_x, mouse_y, "Towers", obj_drawTower);
 	                    draw_tower.image_index = 4;
 	                }
@@ -98,7 +98,7 @@ if (room == rm_tutorial || room == rm_prehistoric || room == rm_medieval || room
                 break;
             case "buy_4":
 				if (!global.menuToggle && !global.sellButton && !global.mergeButton) {
-	                if (global.credits >= 200) {
+	                if (global.credits >= 400) {
 	                    draw_tower = instance_create_layer(mouse_x, mouse_y, "Towers", obj_drawTower);
 	                    draw_tower.image_index = 6;
 	                }

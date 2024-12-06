@@ -17,15 +17,20 @@ if (instance_exists(obj_controller) && global.mergeButton) {
                     // valid merge, destroy second tower and spawn upgraded tower
                     instance_destroy(tower);
                     var newTower = instance_create_layer(mouse_x, mouse_y, "Towers", obj_tower);
+					
+					// need add functionality to ensure that image_index does not go out of bounds
                     newTower.sprite_index = pickedTowerSprite;
                     newTower.image_index = pickedTowerIndex + 1;
                     drawTower = false; // reset draw state
 					global.towerCount -= 1;
 					newTower.upgradeTimer = room_speed * 3;
 					newTower.shaderActive = true;
+					newTower.cost = newTower.cost * 2; // ensure proper selling cost for newTower
+					global.mergeButton = false; // reset merge button
                 } else {
                     // show warning: towers are not of same type
                     show_debug_message("Warning: Try merging towers of the same type!");
+					global.mergeButton = false; // reset merge button
                 }
             }
         }
