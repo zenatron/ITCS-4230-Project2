@@ -2,7 +2,7 @@
 // Bullet does damage to enemy and destroys itself.
 
 // double final outcome damage based on powerup
-if (global.double_damage) { damage *= 2; }
+if (global.double_damage) { global.damage *= 2; }
 
-other.enemyHealth -= damage;
+other.enemyHealth -= global.damage;
 instance_destroy(self);

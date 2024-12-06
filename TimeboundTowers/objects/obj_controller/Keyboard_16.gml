@@ -21,3 +21,10 @@ if (keyboard_check_pressed(ord("M")))
 	show_debug_message("!!! Global No Max Towers: " + string(global.noMaxTowers));
 	max_tower_toggle = !max_tower_toggle;
 }
+
+// Eshwar Kanikanti 12/5/2024
+// Skip tutorial level while testing
+if (keyboard_check_pressed(ord("T")))
+{
+	room_goto(rm_map_choose);
+}

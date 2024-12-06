@@ -9,3 +9,7 @@ if (instance_exists(obj_tower)) {
 	global.towerCount = 0;
 }
 instance_destroy(self);
+
+// Eshwar Kanikanti 12/5/2024
+// Stop background music after exiting room
+audio_stop_sound(snd_tutorial_music)

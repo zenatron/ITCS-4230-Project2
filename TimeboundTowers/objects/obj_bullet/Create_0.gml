@@ -2,4 +2,4 @@
 // Evelyn Hosana - 11/28/24
 
 speed = 10;
-damage = 15;
+global.damage = 15;
