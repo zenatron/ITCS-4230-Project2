@@ -30,7 +30,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.0.169",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"UntitledProject2",
   "resources":[
@@ -72,6 +72,7 @@
     {"id":{"name":"rm_modern","path":"rooms/rm_modern/rm_modern.yy",},},
     {"id":{"name":"rm_prehistoric","path":"rooms/rm_prehistoric/rm_prehistoric.yy",},},
     {"id":{"name":"rm_tutorial","path":"rooms/rm_tutorial/rm_tutorial.yy",},},
+    {"id":{"name":"rm_victory","path":"rooms/rm_victory/rm_victory.yy",},},
     {"id":{"name":"scr_activate_powerup","path":"scripts/scr_activate_powerup/scr_activate_powerup.yy",},},
     {"id":{"name":"scr_menu_text","path":"scripts/scr_menu_text/scr_menu_text.yy",},},
     {"id":{"name":"scr_wave_system","path":"scripts/scr_wave_system/scr_wave_system.yy",},},
@@ -86,6 +87,7 @@
     {"id":{"name":"snd_sell","path":"sounds/snd_sell/snd_sell.yy",},},
     {"id":{"name":"snd_tower_place","path":"sounds/snd_tower_place/snd_tower_place.yy",},},
     {"id":{"name":"snd_tutorial_music","path":"sounds/snd_tutorial_music/snd_tutorial_music.yy",},},
+    {"id":{"name":"snd_victory","path":"sounds/snd_victory/snd_victory.yy",},},
     {"id":{"name":"spr_block","path":"sprites/spr_block/spr_block.yy",},},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},},
     {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},},
@@ -106,6 +108,7 @@
     {"id":{"name":"spr_tower","path":"sprites/spr_tower/spr_tower.yy",},},
     {"id":{"name":"spr_tutorial_home","path":"sprites/spr_tutorial_home/spr_tutorial_home.yy",},},
     {"id":{"name":"spr_tutorial","path":"sprites/spr_tutorial/spr_tutorial.yy",},},
+    {"id":{"name":"spr_victory","path":"sprites/spr_victory/spr_victory.yy",},},
     {"id":{"name":"spr_wardog","path":"sprites/spr_wardog/spr_wardog.yy",},},
     {"id":{"name":"spr_waveButton","path":"sprites/spr_waveButton/spr_waveButton.yy",},},
     {"id":{"name":"spr_youdied","path":"sprites/spr_youdied/spr_youdied.yy",},},
@@ -120,6 +123,7 @@
     {"roomId":{"name":"rm_tutorial","path":"rooms/rm_tutorial/rm_tutorial.yy",},},
     {"roomId":{"name":"rm_map_choose","path":"rooms/rm_map_choose/rm_map_choose.yy",},},
     {"roomId":{"name":"rm_death","path":"rooms/rm_death/rm_death.yy",},},
+    {"roomId":{"name":"rm_victory","path":"rooms/rm_victory/rm_victory.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
