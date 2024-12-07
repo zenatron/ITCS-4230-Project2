@@ -1,0 +1,1 @@
+button_type = "buy_2"
