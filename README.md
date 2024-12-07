@@ -1,7 +1,7 @@
 # Timebound Towers
 Developed by ByteBattalion
 
-Members Include: Philip Vishnevsky, Evelyn Hosana, Evan Stark, and Eshwar Kanikanti
+Team Members: Philip Vishnevsky, Evelyn Hosana, Evan Stark, and Eshwar Kanikanti
 
 ## INSTRUCTIONS
 Defend the area from enemies by purchasing towers that shoot bullets/arrows at the enemies. Survive 10 waves of enemies, and do not let them reach your base at the end of the path. Choose from three era-themed maps, each getting more challenging than the last. Place down towers by clicking the left mouse button on the icon on the tower you want to buy, then place it by left-clicking again in a valid area. Use powerups in exchange for tokens to aid your journey by increasing attack speed, damage, or slowing down the enemies. Combine towers using the Merge button to create stronger units. Will you survive the Timebound Towers?
