@@ -8,7 +8,7 @@ if (room == rm_medieval) {
 }
 if (room == rm_modern) { 
 	path_id = choose(path_modern1, path_modern2, path_modern3);
-	sprite_index = spr_sabertooth; // change when made
+	sprite_index = spr_helicopter;
 }
 
 image_speed = 0;

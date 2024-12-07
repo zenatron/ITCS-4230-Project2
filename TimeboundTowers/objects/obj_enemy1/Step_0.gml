@@ -10,21 +10,31 @@ if(enemyHealth <= 0) {
 anim_timer += 1;
 
 if (x > prev_x) {
-	image_xscale = -1; // face right
-	if (anim_timer >= anim_speed) {
-        anim_timer = 0; // reset timer
-        image_index += 1; // move to next frame
-        if (image_index > 4) image_index = 3; // loop back to frame 3
-        if (image_index < 2) image_index = 2; // ensure frame stays within 2-4 range
-    }
+	if (room == rm_prehistoric || room == rm_medieval) {
+		image_xscale = -1; // face right
+		if (anim_timer >= anim_speed) {
+	        anim_timer = 0; // reset timer
+	        image_index += 1; // move to next frame
+	        if (image_index > 4) image_index = 3; // loop back to frame 3
+	        if (image_index < 2) image_index = 2; // ensure frame stays within 2-4 range
+	    }
+	} else if (room == rm_modern) {
+		image_index = 2;
+		image_xscale = -1; // face right
+	}
 } else if (x < prev_x) {
-	image_xscale = 1; // face left
-	if (anim_timer >= anim_speed) {
-        anim_timer = 0;
-        image_index += 1;
-        if (image_index > 4) image_index = 3;
-        if (image_index < 2) image_index = 2;
-    }
+	if (room == rm_prehistoric || room == rm_medieval) {
+		image_xscale = 1; // face left
+		if (anim_timer >= anim_speed) {
+	        anim_timer = 0;
+	        image_index += 1;
+	        if (image_index > 4) image_index = 3;
+	        if (image_index < 2) image_index = 2;
+	    }
+	} else if (room == rm_modern) {
+		image_index = 2;
+		image_xscale = 1; // face left
+	}
 } else if (y > prev_y) {
     image_index = 1; // face down
 } else if (y < prev_y) {
