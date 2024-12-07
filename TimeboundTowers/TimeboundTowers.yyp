@@ -116,14 +116,14 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rm_medieval","path":"rooms/rm_medieval/rm_medieval.yy",},},
-    {"roomId":{"name":"rm_modern","path":"rooms/rm_modern/rm_modern.yy",},},
-    {"roomId":{"name":"rm_prehistoric","path":"rooms/rm_prehistoric/rm_prehistoric.yy",},},
     {"roomId":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
     {"roomId":{"name":"rm_tutorial","path":"rooms/rm_tutorial/rm_tutorial.yy",},},
     {"roomId":{"name":"rm_map_choose","path":"rooms/rm_map_choose/rm_map_choose.yy",},},
     {"roomId":{"name":"rm_death","path":"rooms/rm_death/rm_death.yy",},},
     {"roomId":{"name":"rm_victory","path":"rooms/rm_victory/rm_victory.yy",},},
+    {"roomId":{"name":"rm_modern","path":"rooms/rm_modern/rm_modern.yy",},},
+    {"roomId":{"name":"rm_medieval","path":"rooms/rm_medieval/rm_medieval.yy",},},
+    {"roomId":{"name":"rm_prehistoric","path":"rooms/rm_prehistoric/rm_prehistoric.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

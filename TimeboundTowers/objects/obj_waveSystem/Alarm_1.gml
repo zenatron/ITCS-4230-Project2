@@ -7,4 +7,4 @@ var enemy_type = choose(enemy_types[0], enemy_types[1], enemy_types[2]);
 instance_create_layer(-100, -100, "Enemies", enemy_type);
 path_start(enemy_type.path_id, enemy_type.default_speed, path_action_stop, true);
 
-alarm[1] = (3 - (0.18 * global.waveCounter)) * room_speed;
+alarm[1] = (2 - (0.19 * global.waveCounter)) * room_speed;

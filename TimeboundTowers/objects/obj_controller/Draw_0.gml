@@ -32,7 +32,7 @@ if (room != rm_main_menu && room != rm_map_choose) {
 	// Evelyn Hosana - 11/28/24
 	// modified Evan's implementation to only display cheats when toggled "secretly"
 	draw_set_color(c_red);
-	if (global.immortality) { draw_text(100, 350, "Immortality: Enabled"); }
-	if (global.noBuildCost) { draw_text(100, 400, "No Build Cost: Enabled"); }
-	if (global.noMaxTowers) { draw_text(100, 450, "No Tower Limit: Enabled"); }
+	if (global.immortality) { draw_text(100, 500, "Immortality: Enabled"); }
+	if (global.noBuildCost) { draw_text(100, 550, "No Build Cost: Enabled"); }
+	if (global.noMaxTowers) { draw_text(100, 600, "No Tower Limit: Enabled"); }
 }

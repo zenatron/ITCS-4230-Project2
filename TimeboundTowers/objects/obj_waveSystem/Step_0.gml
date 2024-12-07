@@ -4,7 +4,7 @@
 // 45 seconds to wait to spawn the next wave.
 if (global.waveActive) {
 	global.waveActive = false;
-	alarm[0] = room_speed * 45;
+	alarm[0] = room_speed * 20;
 	
 	global.waveCounter += 1;
 	
