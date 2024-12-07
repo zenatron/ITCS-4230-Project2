@@ -1,4 +1,4 @@
-snd_victory/// @description Cheats toggle on shift key pressed
+/// @description Cheats toggle on shift key pressed
 // Philip Vishnevsky 11/8/2024
 
 if (keyboard_check_pressed(ord("I")))
