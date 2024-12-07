@@ -20,6 +20,15 @@ if (room != rm_main_menu && room != rm_map_choose) {
 	draw_text(100, 250, string_concat("Sell mode: ", global.sellButton) );
 	draw_text(100, 300, string_concat("Merge mode: ", global.mergeButton) );
 	
+	// Evan Stark - December 6th 2024 - ITCS 4230 001
+	// Displaying wave nummber.
+	if (instance_exists(obj_waveSystem)) {
+		draw_text(100, 350, string_concat("WAVE", " ", global.waveCounter) );
+	
+		// DEBUG ONLY
+		draw_text(100, 400, string_concat("New wave alarm: ", obj_waveSystem.alarm[0]));
+		draw_text(100, 450, string_concat("Enemy interval alarm: ", obj_waveSystem.alarm[1]));
+	}
 	// Evelyn Hosana - 11/28/24
 	// modified Evan's implementation to only display cheats when toggled "secretly"
 	draw_set_color(c_red);
