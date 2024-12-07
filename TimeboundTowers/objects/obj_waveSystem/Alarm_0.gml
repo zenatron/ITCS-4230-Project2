@@ -6,6 +6,6 @@ if (global.waveCounter <= 10) {
 }
 
 if (global.waveCounter >= 10) {
-	room_goto(rm_victory);
+	room_goto(Room8);
 	audio_play_sound(snd_victory, 0, false);
 }

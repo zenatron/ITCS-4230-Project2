@@ -9,7 +9,7 @@ if (room == rm_prehistoric) {
 	sprite_index = spr_mammoth;
 }
 if (room == rm_medieval) { 
-	path_id = choose(path_medieval1, path_medieval2, path_medieval3);
+	path_id = choose(path_medieval4, path_medieval1, path_medieval3);
 	sprite_index = spr_horse;
 }
 if (room == rm_modern) { 
