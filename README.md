@@ -6,11 +6,19 @@ Team Members: Philip Vishnevsky, Evelyn Hosana, Evan Stark, and Eshwar Kanikanti
 ## INSTRUCTIONS
 Defend the area from enemies by purchasing towers that shoot bullets/arrows at the enemies. Survive 10 waves of enemies, and do not let them reach your base at the end of the path. Choose from three era-themed maps, each getting more challenging than the last. Place down towers by clicking the left mouse button on the icon on the tower you want to buy, then place it by left-clicking again in a valid area. Use powerups in exchange for tokens to aid your journey by increasing attack speed, damage, or slowing down the enemies. Combine towers using the Merge button to create stronger units. Will you survive the Timebound Towers?
 
+## Installation
+1. Download the GameMaker project.
+2. Open it in GameMaker 2.
+3. Compile and run the game.
+
 ## CHEAT CODES
 - Shift + I = Immortality
 - Shift + B = No building cost
 - Shift + M = No max tower limit
 - Shift + T = Skip tutorial
+
+## Contribution
+As this project is not in active development, contributions are not accepted.
 
 ## ARTWORK CREDITS
 All artwork, illustrations, and graphics created by Evelyn Hosana
